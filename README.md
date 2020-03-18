@@ -1,8 +1,10 @@
 # ArCatch
 
-ArCatch is a tool for static-architecture conformance checking of exception handling design, which deals with the **Exception Handling Degradation** problem. ArCatch aims at enforcing exception handling design decisions in Java projects, providing: 
-* A declarative DSL for expressing design constraints regarding the exception handling implementation; and 
-* A design rule checker to automatically verify the exception handling conformance.
+ArCatch is a tool for static-architecture conformance checking of exception handling design, which deals with the **Exception Handling Degradation** problem. ArCatch is composed of two main parts: 
+* A specification language to express architectural elements, map the architectural elements into implementation ones, and define exception handling anti-degradation rules; and 
+* A design rule checker to automatically perform the conformance checking and generates conformance reports. 
+
+ArCatch is implemented in Java and its current version provides support only for Java programs.
 
 ArCatch in 5 steps
 ------------------
