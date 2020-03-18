@@ -7,12 +7,12 @@ ArCatch is a tool for static-architecture conformance checking of exception hand
 ArCatch in 5 steps
 ------------------
 
-1. Configuration
+1. Basic Configuration
 
     ```java
     ArCatchAPI.setConfiguration(ArCatchAPI
             .configurationBuilder()
-            .projectNameAndVersion("HeloWord", "1.0")
+            .projectNameAndVersion("FooSys", "1.0")
             .projectPath("<project-src-path>")
             .addDependency("<1st-dependecy-path>")
             .addDependency("<2nd-dependecy-path>")        
@@ -23,12 +23,12 @@ ArCatch in 5 steps
     ```java
     ArCatchAPI.setConfiguration(ArCatchAPI
             .configurationBuilder()
-            .projectNameAndVersion("HeloWord", "1.0")
+            .projectNameAndVersion("FooSys", "1.0")
             .projectPathWithMaven("<path-to-the-project-pom>")       
             .build());
     ```
 
-2. Compartment Declaration
+2. Compartment Specification
     ```java
     Compartment compA, compB, compE;
     compA = ArCatchAPI
