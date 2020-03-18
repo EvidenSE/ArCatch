@@ -51,7 +51,7 @@ ArCatch in 5 steps
     compE = ArCatchAPI
               .compartmentBuilder()
               .compartment("E")
-              .matching("lib.exceptions.*")
+              .matching("foo.exception.*")
               .build();
 
     ArCatchAPI.addCompartment(compE);;
@@ -130,14 +130,14 @@ Classical Source Code Metrics
 ------------------
 |Metric      |Meaning                                                 |
 |:-----------|:-------------------------------------------------------|
-|WMC	       |**Weighted Methods per Class**.|
-|DIT	       |**Depth of Inheritance Tree**.|
-|NOC	       |**Number of Children**.|
-|CBO	       |**Coupling Between Objects**.|
-|RFC         |**Response For Class**.|
-|LCOM        |**Lack of Cohesion of Methods v1**.|
-|LCOM2       |**Lack of Cohesion of Methods v2**.|
-|LCOM3       |**Lack of Cohesion of Methods v3**.|
+|WMC	     |**Weighted Methods per Class**. It counts the number of branch instructions in a class.|
+|DIT	     |**Depth of Inheritance Tree**. It counts the number of "fathers" a class has.|
+|NOC	     |**Number of Children**. It conts the number of immediate sub-classes subordinated to a class in the class hierarchy.|
+|CBO	     |**Coupling Between Objects**. It is a count of the number of non-inheritance related couples with other classes.|
+|RFC         |**Response For Class**. It counts the number of unique method invocations in a class.|
+|LCOM        |**Lack of Cohesion of Methods v1**. It measures the cohesiveness of a class.|
+|LCOM2       |**Lack of Cohesion of Methods v2**. It measures the cohesiveness of a class.|
+|LCOM3       |**Lack of Cohesion of Methods v3**. It measures the cohesiveness of a class.|
 |CCC         |**Class Cyclomatic Complexity**. It counts the  Thomas J. McCabe's cyclomatic complexity of a class.|
 |LoC         |**Lines of Code**. It counts the number of lines of code of a class.|
 |NoI         |**Number of Invovations**. It counts the number of invocations performed by a class.|
@@ -148,7 +148,7 @@ Classical Source Code Metrics
 |Ca          |**Afferent Coupling**. Is counts how many other classes use the specific class. |
 |Ce          |**Efferent Coupling**. It counts of how many different classes are used by the specific class.|
 |LMLoC       |**Longest Method Lines of Code**. It counts the lines of code of the longest method of a class.|
-|LPL         |**Longest Parameter List**. It counts the number of parameters of the longest parameter list of a class.|
+|LPL         |**Longest Parameter List**. It counts the number of parameters of the method with the longest parameter list of a class.|
 
 Exception Handling Source Code Metrics
 ------------------
