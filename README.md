@@ -6,7 +6,13 @@ ArCatch is a tool for static-architecture conformance checking of exception hand
 
 ArCatch is implemented in Java and its current version provides support only for Java programs.
 
-ArCatch in 5 steps
+### How to create the Jar file?
+
+* mvn clean compile package
+
+You can go to folder target/arcatch-2.0.0.jar to get the generated jar.
+
+## ArCatch in 5 steps
 ------------------
 
 1. Basic Configuration
